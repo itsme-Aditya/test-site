@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <style>
+    .container {
+        max-width: 800px;
+        text-align: center;
+        margin: auto;        
+    }
+</style>
 </head>
 <body>
-    <h1>This a test web page</h1>
+    <div class = "container">
+        <h1>This is a test web page</h1>
 
-    <p>
-        This is a test web page for github pages, please ignore.
-    </p>
-    
-    <hr>
+        <p>This is a test web page for github pages, please ignore.</p>
+        
+        <hr>
 
-    <h2>huh?</h2>
-    <ul>
-        <li>????</li>
-        <li>!!!!</li>
-        <li>₹₹₹₹</li>
-    </ul>
+        <h2>Next day predictor</h2>
+        
+        <p>Click the button below to predict the next day using cutting edge technology.</p>
 
-    <a href = "https://www.linkedin.com/in/its-me-aditya-singh" target="_blank">LinkedIn</a>
+        <button onclick = "predict()">Predict</button>
+        
+        <p id = "result"></p>
+    </div>
+
+    <script>
+        function predict() {
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const today = new Date().getDay();
+            const tomorrow = days[(today + 1) % 7];
+            console.log("Today: " + today + "\nTomorrow:" + tomorrow)
+            document.getElementById("result").textContent = "Calculating...";
+            setTimeout(() => {
+                document.getElementById("result").textContent = "After extensive calculations, the next day will be: " + tomorrow;
+            }, 2000);
+        }
+    </script>
 </body>
 </html>
