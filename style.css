@@ -1,0 +1,45 @@
+html {
+    background-color: beige;
+}
+
+h1 {
+    color: darkred;
+    font-family: monospace;
+    font-size: 36pt;
+}
+
+h2 {
+    color: purple;
+    font-weight: bold;
+    font-size: 30pt;
+    font-variant: small-caps;
+}
+
+p {
+    font-size: 14pt;
+    font-weight: bolder;
+}
+
+button{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 20pt;
+    background-color: #FF3E9B;
+    color: white;
+    border-radius: 0.5cm;
+    padding: 0.3cm;
+    border-style: hidden;
+    transition-duration: 500ms;
+}
+
+button:hover {
+    background-color: #610130;
+
+}
+
+.container {
+    font-family: monospace;
+    max-width: 800px;
+    text-align: center;
+    margin: auto;        
+}
