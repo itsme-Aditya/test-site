@@ -1,15 +1,27 @@
+@font-face {
+    font-family: "Old English Text MT";
+    src: url("./fonts/oldenglishtextmt.ttf") format("truetype")
+}
+
+#myname {
+    font-family: "Old English Text MT";
+    color: white;
+    font-weight: lighter;
+    font-size: 48pt;
+}
+
 html {
-    background-color: beige;
+    background-color: black;
 }
 
 h1 {
-    color: darkred;
+    color: yellow;
     font-family: monospace;
     font-size: 36pt;
 }
 
 h2 {
-    color: purple;
+    color: pink;
     font-weight: bold;
     font-size: 30pt;
     font-variant: small-caps;
@@ -18,6 +30,11 @@ h2 {
 p {
     font-size: 14pt;
     font-weight: bolder;
+    color: cyan;
+}
+
+#result {
+    color: orange;
 }
 
 button{
